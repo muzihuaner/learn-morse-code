@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/learn-morse-code/static/css/main.3189e1b4.css",
-    "main.js": "/learn-morse-code/static/js/main.fe5e9102.js",
+    "main.js": "/learn-morse-code/static/js/main.817fdf5d.js",
     "index.html": "/learn-morse-code/index.html",
     "main.3189e1b4.css.map": "/learn-morse-code/static/css/main.3189e1b4.css.map",
-    "main.fe5e9102.js.map": "/learn-morse-code/static/js/main.fe5e9102.js.map"
+    "main.817fdf5d.js.map": "/learn-morse-code/static/js/main.817fdf5d.js.map"
   },
   "entrypoints": [
     "static/css/main.3189e1b4.css",
-    "static/js/main.fe5e9102.js"
+    "static/js/main.817fdf5d.js"
   ]
 }
