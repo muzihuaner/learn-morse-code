@@ -13,7 +13,7 @@ export default React.memo(function Info() {
 
             <h2>短音 滴 和长音 哒</h2>
             <p>
-                <span className="bold">滴</span> <i className="ri-volume-up-fill" onClick={() => playMorseWord('.')}></i> (<span className="ditdah">.</span>) 短音是莫尔斯电码通信的基本单位长度。<br />
+                <span className="bold">滴</span> <i className="ri-volume-up-fill" onClick={() => playMorseWord('.')}></i> (<span className="ditdah">.</span>) 短音是摩尔斯电码通信的基本单位长度。<br />
                 <span className="bold">哒</span> <i className="ri-volume-up-fill" onClick={() => playMorseWord('-')}></i> (<span className="ditdah">-</span>) 长音一般是三个点的长度。
             </p>
 
