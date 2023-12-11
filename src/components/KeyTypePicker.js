@@ -56,7 +56,7 @@ export default React.memo(function KeyTypePicker() {
                 直键
                 </button>
                 <button id="electronic" onClick={handleClick}>
-                电键
+                桨键
                 </button>
             </div>
             <div id="paddle-mode-buttons">

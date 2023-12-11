@@ -38,7 +38,7 @@ export default React.memo(function Info() {
             <center><img src='https://jsd.onmicrosoft.cn/gh/muzihuaner/learn-morse-code@master/src/media/images/straight_key.jpg' alt="Straight Key" /></center>
             <p><b>直键</b> 使用单个按钮在按下时发出声音。 需要更高的操作精度，因为“滴”、“哒”和间隔完全由手动控制。</p>
             <center><img src='https://jsd.onmicrosoft.cn/gh/muzihuaner/learn-morse-code@master/src/media/images/electronic_key.jpg' alt="Electronic Key"></img></center>
-            <p><b>电键</b> 使用会自动生成“嘀”和“哒”的拨片。 这里的电键是 双桨 键控器，它使用两个拨片 ，<b>模式A</b>  左拨片用于“嘀”，右拨片用于“哒”。 同时按下两个拨片会自动在“嘀”和“哒”之间交替。 <b>模式B</b> 按下左右键会交替发送“嘀，嗒”，放开的时候会比停下时多发一个，也就是放开时正在发“滴”则会多发一个“哒”，而放开时正在发“哒”则会多发一个“滴”。</p>
+            <p><b>桨键</b> 使用会自动生成“嘀”和“哒”的拨片。 这里是 双桨 键控器，它使用两个拨片 ，<b>模式A</b>  左拨片用于“嘀”，右拨片用于“哒”。 同时按下两个拨片会自动在“嘀”和“哒”之间交替。 <b>模式B</b> 按下左右键会交替发送“嘀，嗒”，放开的时候会比停下时多发一个，也就是放开时正在发“滴”则会多发一个“哒”，而放开时正在发“哒”则会多发一个“滴”。</p>
 
             <p>观看 <a href='https://www.youtube.com/watch?v=uEy4Wvy6uUg' target='_blank' rel="noopener noreferrer">视频</a> 了解直键和双桨键的区别。</p>
         </div>
