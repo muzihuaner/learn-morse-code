@@ -37,7 +37,7 @@ export default React.memo(function WordListPicker() {
         <div id="challengeOptions">
             <div id="wordListPicker" className="mode-picker">
                 <div id="title">
-                    Word List:
+                    列表:
                 </div>
                 <div id="input">
                     <select id="wordlist-picker" defaultValue={wordListCategory} onChange={handleClick}>
@@ -48,14 +48,14 @@ export default React.memo(function WordListPicker() {
 
             <div id="wordOrderPicker" className="mode-picker">
                 <div id="title">
-                    Word Order:
+                词序:
                 </div>
                 <div id="buttons">
                     <button id="sequential" className="selected" onClick={handleClick}>
-                        Sequential
+                        顺序
                     </button>
                     <button id="random" onClick={handleClick}>
-                        Random
+                        随机
                     </button>
                 </div>
             </div>
@@ -64,7 +64,7 @@ export default React.memo(function WordListPicker() {
 
             <div id="wordlist-description" className="mode-picker">
                 <div id="title">
-                    Description:
+                描述:
                 </div>
                 <div id="info">
                     {metadata[wordListCategory]['description']}

@@ -8,6 +8,10 @@
   -ms-touch-action: manipulation;
       touch-action: manipulation;
 }
+#link{
+  color: #ededed;
+  text-decoration: none;
+}
 
 button {
   font-family: "Roboto", sans-serif;

@@ -38,13 +38,13 @@ export default (function SidebarLeft() {
             <div id="sidebar-container">
                 <div className="navbar">
                     <div id="nav-play" className="nav-item" onClick={navClicked}>
-                        Play
+                        练习
                     </div>
                     <div id="nav-learn" className="nav-item selected" onClick={navClicked}>
-                        Learn
+                        学习
                     </div>
                     <div id="nav-legend" className="nav-item" onClick={navClicked}>
-                        Legend
+                        字典
                     </div>
                 </div>
 
@@ -55,7 +55,7 @@ export default (function SidebarLeft() {
                     {sidebarContent === 'nav-legend' && 
                         <div id="playerAndLegend">
                             <Legend />
-                            <span id="note">Adjust the Morse code speed by changing the WPM in the Options menu.</span>
+                            <span id="note">通过更改“选项”菜单中的 WPM 来调整摩尔斯电码速度。</span>
                             <PlayMorseInput />
                         </div>
                     }

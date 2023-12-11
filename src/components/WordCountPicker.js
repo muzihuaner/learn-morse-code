@@ -21,7 +21,7 @@ export default React.memo(function WordCountPicker() {
     return (
         <div id='word-count' className='mode-picker'>
             <div id='title'>
-                Challenge Word Count: <span id="range">(1-{wordListCountMax})</span>
+                挑战字数: <span id="range">(1-{wordListCountMax})</span>
             </div>
             <div id="input">
                 <select id="wordCount-picker" defaultValue={wordListCountMax} onChange={handleChange}>

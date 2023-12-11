@@ -36,8 +36,8 @@ export default (function MorseHistoryTextBox() {
         <div id="morse-history">
             <div id="morseHistory-textbox">{text}</div>
             <div id="clear">
-                <span id="message">"<span className="ditDah">[?]</span>" signifies no translation available.</span>
-                <button id="clear-history" onClick={clearHistory}>Clear</button>
+                <span id="message">"<span className="ditDah">[?]</span>" 表示没有可用的翻译。</span>
+                <button id="clear-history" onClick={clearHistory}>重置</button>
             </div>
         </div>
     )

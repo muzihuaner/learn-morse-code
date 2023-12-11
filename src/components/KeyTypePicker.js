@@ -28,7 +28,7 @@ export default React.memo(function KeyTypePicker() {
                 document.querySelector('.paddle#left').classList.add('showPaddles')
                 document.querySelector('.paddle#right').classList.add('showPaddles')
                 document.getElementById('paddle-mode-buttons').style.visibility = 'visible'
-                document.getElementById('morseButtonText').innerHTML = 'TAP/HOLD BUTTONS OR PRESS COMMA / PERIOD'
+                document.getElementById('morseButtonText').innerHTML = '点击/按住按钮或按逗号/句号'
                 break
             case 'modeA':
                 e.target.classList.add('selected')
@@ -49,19 +49,19 @@ export default React.memo(function KeyTypePicker() {
     return (
         <div id="keyType" className="mode-picker">
             <div id="title">
-                Key Type
+                键类型
             </div>
             <div id="key-type-buttons">
                 <button id="straight" onClick={handleClick}>
-                    Straight Key
+                直键
                 </button>
                 <button id="electronic" onClick={handleClick}>
-                    Electronic Key
+                电键
                 </button>
             </div>
             <div id="paddle-mode-buttons">
                 <fieldset id="paddle-mode">
-                    <legend>Paddle Mode</legend>
+                    <legend>双桨模式</legend>
                     <button id="modeA" class="selected" onClick={handleClick}>
                         A
                     </button>

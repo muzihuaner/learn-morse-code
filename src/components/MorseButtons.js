@@ -9,7 +9,7 @@ export default React.memo(function MorseButtons() {
                 <button className="paddle" id="right"></button>
             </div>
             <div id="morseButtonText">
-                TAP BUTTON OR PRESS SPACEBAR
+                点击按钮或按空格键
             </div>
         </>
     )

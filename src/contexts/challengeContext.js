@@ -31,7 +31,7 @@ function ChallengeContextProvider(props) {
 
         // Challenge countdown setup
         document.getElementById('challengeReady').classList.add('starting')
-        document.getElementById('challengeReady').innerHTML = `<span id="message">Challenge starting in</span><span id="count">${count}</span>`
+        document.getElementById('challengeReady').innerHTML = `<span id="message">挑战将在</span><span id="count">${count} s后开始</span>`
         // Start Challenge countdown
         countdown = setInterval(() => {
             count--
@@ -45,7 +45,7 @@ function ChallengeContextProvider(props) {
                     setChallengeState('started')
                 }, 900);
             }
-            document.getElementById('challengeReady').innerHTML = `<span id="message">Challenge starting in</span><span id="count">${count}</span>`
+            document.getElementById('challengeReady').innerHTML = `<span id="message">挑战将在</span><span id="count">${count} s后开始</span>`
         }, 1000)
     }
 

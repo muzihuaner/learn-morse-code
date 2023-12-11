@@ -67,7 +67,7 @@ export default React.memo(function Legend() {
     return (
         <div id="legend">
             <div id="legend-title">
-                Legend
+                摩尔斯字典
             </div>
             <div id="legend-items">
                 {letters}

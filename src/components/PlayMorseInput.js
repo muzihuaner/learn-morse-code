@@ -44,15 +44,15 @@ export default (function PlayMorseInput() {
     return (
         <div id="playMorseInput">
             <div id="title">
-                <h2>Translate To Morse</h2>
+                <h2>翻译为摩尔斯电码</h2>
             </div>
             <div id="input">
-                <input type="text" id='morseInput' value={inputValue} onChange={handleChange} placeholder="Type here." maxLength="25"/> <i className="ri-play-fill" onClick={handlePlay}></i>
+                <input type="text" id='morseInput' value={inputValue} onChange={handleChange} placeholder="输入..." maxLength="25"/> <i className="ri-play-fill" onClick={handlePlay}></i>
                 <i className="ri-stop-fill" onClick={() => playMorseWord('')}></i> 
             </div>
             <div id="morseTranslation">
                 <span id="morseTrans">
-                    {morseTranslation === '' ? 'Morse translation will appear here.' : morseTranslation.replace(/\?/g,'[?]').replace(/\] /g,']')}
+                    {morseTranslation === '' ? '摩尔斯译文将出现在这里。' : morseTranslation.replace(/\?/g,'[?]').replace(/\] /g,']')}
                 </span>
             </div>
         </div>

@@ -8,9 +8,9 @@ export default (function ChallengeReady() {
 
     return (
         <div id="challengeReady" className="notify">
-            <span id="notify-title">Challenge Options</span>
+            <span id="notify-title">挑战选项</span>
             <WordListPicker />
-            <button id="startChallenge" onClick={startChallenge}>Start Challenge</button>
+            <button id="startChallenge" onClick={startChallenge}>开始挑战</button>
         </div>
     )
 })

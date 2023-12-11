@@ -16,15 +16,15 @@ export default (function ChallengeComplete() {
     const minutes = Math.floor(gameClockTime / 60)
     const seconds = gameClockTime % 60
 
-    let time = (minutes === 0) ? `${seconds} seconds` : `${minutes} minutes and ${seconds} seconds`
+    let time = (minutes === 0) ? `${seconds} 秒` : `${minutes} 分 ${seconds} 秒`
 
     return (
         <div id="challengeComplete" className="notify">
-            <span id="notify-title">Challenge Complete</span>
-            <span id="message">You completed <b>{wordListCount}</b> words<br />
-            from the <b>{metadata[wordListCategory]['name']}</b> word list<br />
-            in <b>{time}</b>!</span>
-            <button id="continue" onClick={_continue}>Continue</button>
+            <span id="notify-title">挑战结束</span>
+            <span id="message">在<b>{time}</b>，你完成了 <b>{wordListCount}</b> 个词<br />
+            从 <b>{metadata[wordListCategory]['name']}</b> 列表<br />
+            !</span>
+            <button id="continue" onClick={_continue}>继续</button>
 
         </div>
     )

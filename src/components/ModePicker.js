@@ -1,4 +1,4 @@
-import React, {useContext} from "react"
+import React, { useContext } from "react"
 import { ChallengeContext } from "../contexts/challengeContext"
 import { GameClockContext } from "../contexts/gameClockContext"
 import { GameModeContext } from "../contexts/gameModeContext"
@@ -7,11 +7,11 @@ import { WordFeederContext } from "../contexts/wordFeederContext"
 
 export default React.memo(function ModePicker() {
 
-    const {setGameMode} = useContext(GameModeContext)
-    const {setMorseCharBuffer} = useContext(MorseBufferContext)
-    const {resetFeeder} = useContext(WordFeederContext)
-    const {stopGameClock, setGameClockTime, clockIsRunning} = useContext(GameClockContext)
-    const {setChallengeState} = useContext(ChallengeContext)
+    const { setGameMode } = useContext(GameModeContext)
+    const { setMorseCharBuffer } = useContext(MorseBufferContext)
+    const { resetFeeder } = useContext(WordFeederContext)
+    const { stopGameClock, setGameClockTime, clockIsRunning } = useContext(GameClockContext)
+    const { setChallengeState } = useContext(ChallengeContext)
 
     function handleClick(e) {
         setMorseCharBuffer('')
@@ -20,7 +20,7 @@ export default React.memo(function ModePicker() {
 
         setGameMode(e.target.id)
 
-        if (clockIsRunning) { 
+        if (clockIsRunning) {
             stopGameClock()
             setGameClockTime(0)
         }
@@ -29,21 +29,21 @@ export default React.memo(function ModePicker() {
         buttons.forEach(button => {
             if (button.id === e.target.id) {
                 button.classList.add('selected')
-            } else { button.classList.remove('selected')}
+            } else { button.classList.remove('selected') }
         })
     }
 
     return (
         <div id="gameMode" className="mode-picker">
             <div id="title">
-                Mode
+                模式
             </div>
             <div id='buttons'>
                 <button id="practice" className="selected" onClick={handleClick}>
-                    Practice Mode
+                    练习模式
                 </button>
                 <button id="challenge" onClick={handleClick}>
-                    Challenge Mode
+                    挑战模式
                 </button>
             </div>
         </div>
