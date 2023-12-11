@@ -18,7 +18,7 @@ export default React.memo(function Info() {
             </p>
 
             <h2>间隔</h2 >
-            <p>在摩尔斯电码中，“滴”和“哒”之间的间距很重要。 不同长度的间距表示不同的事物。<br/>
+            <p>在摩尔斯电码中，“滴”和“哒”的间隔很重要。 不同长度的间隔表示不同的含义。<br/>
 
                 <span className="bold">字符内间隔</span> 摩尔斯电码中的一个字母可以由多个“嘀”和“哒”组成。 组成单个字母的“滴”和“哒”之间的空格各为一个“滴”的长度。 例如，三个点，每个点由一个点长的空格分隔，“S”。 (<span className="ditdah">...</span>) <i className="ri-volume-up-fill" onClick={() => playMorseWord('...')}></i><br />
 
