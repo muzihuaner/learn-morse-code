@@ -18,7 +18,7 @@ export default React.memo(function KeyTypePicker() {
                 document.querySelector('.paddle#left').classList.remove('showPaddles')
                 document.querySelector('.paddle#right').classList.remove('showPaddles')
                 document.getElementById('paddle-mode-buttons').style.visibility = 'hidden'
-                document.getElementById('morseButtonText').innerHTML = 'TAP BUTTON OR PRESS SPACEBAR'
+                document.getElementById('morseButtonText').innerHTML = '点击按钮或者空格键'
                 break;
             case 'electronic':
                 e.target.classList.add('selected');
