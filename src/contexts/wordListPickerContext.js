@@ -12,7 +12,8 @@ const WordListPickerContext = React.createContext()
 function WordListPickerContextProvider(props) {
 
     const [wordListCategory, setWordListCategory] = useState('alphabet')
-    const [wordListCount, setWordListCount] = useState(10)
+    
+    const [wordListCount, setWordListCount] = useState(26)
 
     let wordList = []
 
