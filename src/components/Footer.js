@@ -9,7 +9,7 @@ export default (function Footer() {
     
     return (
         <div id="footer">
-            制作 genemecija&nbsp;汉化 muzihuaner<span id="contact-icons"><i id="github" onClick={handleClick} className={contactLinks['github']['icon']}></i></span>
+            @genemecija 开发&nbsp;<span id="contact-icons"><i id="github" onClick={handleClick} className={contactLinks['github']['icon']}></i></span>
         </div>
     )
 })

@@ -41,7 +41,7 @@ export default React.memo(function FrequencyPicker(props) {
     return (
         <div id='frequency' className='mode-picker'>
             <div id='title'>
-            频率 <span id="range">({minFreq}-{maxFreq})</span>
+                频率 <span id="range">({minFreq}-{maxFreq})</span>
             </div>
             <div id='input'>
                 <button id='freq-down' onClick={decrement}><i className="ri-arrow-down-s-line"></i></button>

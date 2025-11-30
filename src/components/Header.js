@@ -45,11 +45,10 @@ export default (function Header () {
     return (
         <div id="header">
             <div id="title">
-            快点摩尔斯电码
+                快点摩尔斯电码
             </div>
             <div id="social-links">
-                {/* Share: <span id="share-icons">{contacts}</span> */}
-                <a href="https://ham.quickso.cn" id="link">快点HAM工具箱</a>
+                 <a href="https://ham.quickso.cn/" style={{color: 'white'}}>快点HAM工具箱</a>
             </div>
         </div>
     )

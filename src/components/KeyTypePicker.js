@@ -18,7 +18,7 @@ export default React.memo(function KeyTypePicker() {
                 document.querySelector('.paddle#left').classList.remove('showPaddles')
                 document.querySelector('.paddle#right').classList.remove('showPaddles')
                 document.getElementById('paddle-mode-buttons').style.visibility = 'hidden'
-                document.getElementById('morseButtonText').innerHTML = '点击按钮或者空格键'
+                document.getElementById('morseButtonText').innerHTML = '点击按钮或按空格键'
                 break;
             case 'electronic':
                 e.target.classList.add('selected');
@@ -49,19 +49,19 @@ export default React.memo(function KeyTypePicker() {
     return (
         <div id="keyType" className="mode-picker">
             <div id="title">
-                键类型
+                电键类型
             </div>
             <div id="key-type-buttons">
                 <button id="straight" onClick={handleClick}>
-                直键
+                    直键
                 </button>
                 <button id="electronic" onClick={handleClick}>
-                桨键
+                    电子键
                 </button>
             </div>
             <div id="paddle-mode-buttons">
                 <fieldset id="paddle-mode">
-                    <legend>双桨模式</legend>
+                    <legend>按键模式</legend>
                     <button id="modeA" class="selected" onClick={handleClick}>
                         A
                     </button>

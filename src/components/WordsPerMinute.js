@@ -42,7 +42,7 @@ export default React.memo(function WordsPerMinute() {
     return (
         <div id='wpm' className='mode-picker'>
             <div id='title'>
-                WPM <span id="range">({minWPM}-{maxWPM})</span>
+                速度 (WPM) <span id="range">({minWPM}-{maxWPM})</span>
             </div>
             <div id='input'>
                 <button id='wpm-down' onClick={decrement}><i className="ri-arrow-down-s-line"></i></button>

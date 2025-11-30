@@ -9,6 +9,6 @@ export default (function GameClock(props) {
     const seconds = gameClockTime % 60
 
     return (
-        <div id="gameClock">计时⌛️: <span id="clockTime">{minutes} 分 {seconds} 秒</span></div>
+        <div id="gameClock">已用时间：<span id="clockTime">{minutes} 分钟 {seconds} 秒</span></div>
     )
 })

@@ -20,10 +20,10 @@ export default (function ChallengeComplete() {
 
     return (
         <div id="challengeComplete" className="notify">
-            <span id="notify-title">挑战结束</span>
-            <span id="message">在<b>{time}</b>，你完成了 <b>{wordListCount}</b> 个词<br />
-            从 <b>{metadata[wordListCategory]['name']}</b> 列表<br />
-            !</span>
+            <span id="notify-title">挑战完成</span>
+            <span id="message">你完成了 <b>{wordListCount}</b> 个单词<br />
+            来自 <b>{metadata[wordListCategory]['name']}</b> 单词列表<br />
+            用时 <b>{time}</b>!</span>
             <button id="continue" onClick={_continue}>继续</button>
 
         </div>

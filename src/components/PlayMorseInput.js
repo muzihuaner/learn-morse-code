@@ -36,7 +36,7 @@ export default (function PlayMorseInput() {
                 return (r === 'undefined' ? '?' : r + ' ')
             }
         })
-        let a = morse.map(i => i.trim()).join(' ').replace(/ \/ /g,'/').replace(/ \?/g,'?')
+        let a = morse.map(i => i.trim()).join(' ').replace(/ \/ /g, '/').replace(/ \?/g, '?')
         setMorseTranslation(a)
 
     }, [inputValue])
@@ -47,12 +47,12 @@ export default (function PlayMorseInput() {
                 <h2>翻译为摩尔斯电码</h2>
             </div>
             <div id="input">
-                <input type="text" id='morseInput' value={inputValue} onChange={handleChange} placeholder="输入..." maxLength="25"/> <i className="ri-play-fill" onClick={handlePlay}></i>
-                <i className="ri-stop-fill" onClick={() => playMorseWord('')}></i> 
+                <input type="text" id='morseInput' value={inputValue} onChange={handleChange} placeholder="在这输入." maxLength="25" /> <i className="ri-play-fill" onClick={handlePlay}></i>
+                <i className="ri-stop-fill" onClick={() => playMorseWord('')}></i>
             </div>
             <div id="morseTranslation">
                 <span id="morseTrans">
-                    {morseTranslation === '' ? '摩尔斯译文将出现在这里。' : morseTranslation.replace(/\?/g,'[?]').replace(/\] /g,']')}
+                    {morseTranslation === '' ? '摩尔斯电码翻译将显示在此处。' : morseTranslation.replace(/\?/g, '[?]').replace(/\] /g, ']')}
                 </span>
             </div>
         </div>

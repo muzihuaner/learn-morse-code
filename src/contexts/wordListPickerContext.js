@@ -41,14 +41,15 @@ function WordListPickerContextProvider(props) {
 
     const wordListCountMax = wordList.length
 
-    const metadata = {
-        'alphabet': {name: '字母', description: '字母表中的所有字母'},
-        'numbers': {name: '数字', description: '0-9'},
-        'boys': {name: '男孩名字', description: '流行的男孩名字'},
-        'girls': {name: '女孩名字', description: '流行的女孩名字'},
-        'startrek': {name: '星际 迷航', description: '星际 迷航 宇宙'},
-        'common100': {name: '常用词', description: '100个常用词'}
-    }
+   const metadata = {
+    'alphabet': {name: '字母表', description: '所有字母'},
+    'numbers': {name: '数字', description: '0-9'},
+    'boys': {name: '男生名字', description: '常见男生名字'},
+    'girls': {name: '女生名字', description: '常见女生名字'},
+    'startrek': {name: '星际迷航', description: '星际迷航宇宙'},
+    'common100': {name: '常用词', description: '最常用的 100 个词'}
+}
+
 
     // Shuffle input array and return
     function randomize(arr) {
